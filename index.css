@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+.foodie-logo{
+    width: 50px;
+}
+.booking-now{
+    border-radius: 1em;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: #FF5733 ;
+    height: 2em;
+    color: black;
+}
+.home{
+    margin-left: auto;
+}
+@media all and (max-width: 600px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    .container > div {
+        flex: 1 1 50%;
+    }
+}
+@media all and (max-width: 400px) {
+    .container > li {
+      flex: 1 1 100%;
+    }
+}
